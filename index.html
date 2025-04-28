@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Superluck - Cassino Online</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Superluck</h1>
+    <p>Saldo: R$<span id="balance">5000</span></p>
+  </header>
+
+  <main>
+    <section class="games">
+      <button onclick="startAviator()">Jogo do Avião</button>
+      <button onclick="startMines()">Jogo do Mines</button>
+      <button onclick="startTiger()">Jogo do Tigre</button>
+      <button onclick="startRoulette()">Roleta</button>
+    </section>
+
+    <section class="bet-options">
+      <label for="bet">Valor da Aposta:</label>
+      <select id="bet">
+        <option value="1">R$1</option>
+        <option value="3">R$3</option>
+        <option value="5">R$5</option>
+        <option value="10">R$10</option>
+        <option value="20">R$20</option>
+        <option value="30">R$30</option>
+        <option value="50">R$50</option>
+      </select>
+    </section>
+
+    <section id="gameArea"></section>
+  </main>
+
+  <footer>
+    <p>Superluck © 2025</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
